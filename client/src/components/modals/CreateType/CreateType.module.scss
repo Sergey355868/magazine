@@ -1,0 +1,77 @@
+.createType {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index:1010;
+  &_border {
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+  &_shadow {
+    box-shadow: 2px 2px 10px gray;
+  }
+  &_theme {
+    background-color: #989494;
+  }
+  &_size {
+    width: 250px;
+    height: 400px;
+  }
+  &_animate  {
+    animation: zoom 0.6s ;
+  }
+    &__title {
+      &_style {
+        color: white;
+        text-decoration: underline;
+      }
+      &_shadow {
+        text-shadow: 2px 2px 10px white;
+      }
+    }
+    &__body {
+      position: relative;
+    }
+    &__input {
+      padding: 0.5rem;
+      &_style {
+        font-weight: bold;
+        font-size: 1rem;
+        color: gray;
+      }
+      &_border {
+        border: 2px solid gray;
+      }
+      &:focus {
+        outline: 2px solid gray;
+      }
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &_size {
+        width: 100%;
+      }
+    }
+    &__button {
+      padding: 0.5rem;
+    }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+
+
+
+
+
+

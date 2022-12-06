@@ -1,0 +1,25 @@
+.brand-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.card {
+  width: 110px;
+  padding: 10px;
+  cursor: pointer;
+   &_theme {
+    background-color: black;
+  }
+  &_border {
+    border:2px solid white;
+  }
+  &_style{
+    text-align: center;
+    color: white;
+  }
+  &_active {
+    background-color: rebeccapurple;
+  }
+}

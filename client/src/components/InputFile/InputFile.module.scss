@@ -1,0 +1,18 @@
+.custom-input-file {
+  &__label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    cursor:pointer;
+    &_style {
+      color: darkgreen;
+
+    }
+    &_border {
+      border: 2px dashed green;
+    }
+  }
+  &__input {
+    display: none;
+  }
+}

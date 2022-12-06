@@ -1,0 +1,32 @@
+.pagination {
+  padding: 20px;
+
+  &__item {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    &_border {
+      border-radius: 50%;
+      border: 2px solid gray;
+    }
+    &_style {
+      font-weight: bold;
+      color: black;
+    }
+    &_theme {
+      background-color: #989494;
+    }
+    &_shadow {
+      box-shadow: 2px 2px 7px black;
+    }
+    &_active {
+      box-shadow: none;
+      transform: translateY(2px);
+      color:white;
+    }
+    &:hover {
+      background-color: #525151;
+    }
+  }
+}

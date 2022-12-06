@@ -1,0 +1,48 @@
+.root__navigate {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index:1000;
+}
+.navigate-b1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.1rem;
+
+    &_border-br1 {
+      border: 2px solid black;
+      border-radius: 3px;
+    }
+    &_theme-th1 {
+      background-color: black;
+    }
+    &__contaner-el1 {
+          padding: 0.2rem;
+
+          &_al1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &_pdr1 {
+            padding-right: 35px;
+          }
+          &_mr1 {
+            margin-right: calc(-1*(100vw - 100%)) ;
+          }
+          &_hover-hv1:hover {
+            background-color: #2c2a2a;
+          }
+    }
+    &__link-el2 {
+          cursor:pointer;
+          &_style-st1 {
+            text-decoration: none;
+            font-weight: bold;
+            color:white;
+            font-style:italic;
+          }
+
+    }
+}

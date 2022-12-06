@@ -1,0 +1,62 @@
+.box-success {
+  padding: 7px 10px 8px 64px;
+  &_pos_abs {
+    position: absolute;
+  }
+  &_shift_1 {
+    top: -225%;
+    left: 0;
+  }
+  &_shift_2 {
+    top:40%;
+    left: 20%;
+    width: 50% !important;
+    box-shadow: 5px 5px 5px green, -5px -5px 5px green !important;
+  }
+  &_size {
+    width: 100%;
+    min-height: 64px;
+  }
+  &_theme {
+    background-image: url("../../assets/ok-3.png");
+    background-repeat: no-repeat;
+    background-color: #769d76;
+  }
+  &_style {
+    color: #525151;
+    font-weight: bold;
+    text-align: center;
+  }
+  &_border {
+    border-radius: 10px;
+    outline: 2px solid  #525151;
+    outline-offset: 2px;
+  }
+  &_box-shadow {
+    box-shadow: 2px 2px 8px #769d76;
+  }
+
+  &_animation_vis {
+    animation: 0.5s success, hidden 1s 3s ;
+  }
+  }
+@keyframes success {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

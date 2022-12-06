@@ -1,0 +1,212 @@
+.root__entry-form {
+    position: fixed;
+    z-index: 101;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.entry-form {
+    padding: 20px;
+    &_them1 {
+        background-color: lightgray;
+    }
+    &_theme2 {
+        background-color: #4b4848;
+    }
+    &_shadow {
+        box-shadow: 5px 5px 10px lightslategray,
+        -5px -5px 10px lightslategray;
+    }
+    &_border {
+        border-radius: 5px;
+        border: 1px solid lightgray;
+    }
+    &_size {
+        width: 320px;
+    }
+    &_animate {
+        animation: animatezoom_m 0.6s;
+    }
+    &__form {
+        position: relative;
+    }
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top:0;
+        right:0;
+        &_none {
+            display: none;
+        }
+    }
+    &__close-img {
+        transition: 0.1s;
+        padding: 3px;
+        &_shadow {
+            box-shadow: 3px 3px 3px gray;
+        }
+        &_size {
+            width: 25px;
+            height: 25px;
+        }
+        &_border {
+            border-radius: 50%;
+        }
+        &:hover {
+            background-color: #312d2d ;
+        }
+        &:active {
+            transform: translateY(3px);
+            box-shadow: none;
+        }
+    }
+    &__container-img {
+        text-align: center;
+        margin-bottom: 5px;
+        &_shadow {
+            box-shadow: 5px 5px 10px lightslategray,
+            -5px -5px 10px lightslategray;
+        }
+        &_border {
+            border-radius: 50%;
+        }
+        &_animation {
+            animation: scale ease-out infinite 0.6s;
+        }
+    }
+    &__img {
+        display: inline-block;
+        padding: 5px;
+        &_size {
+            width: 200px;
+            height: 200px;
+        }
+        &_border {
+            border-radius: 50%;
+            border: 1px solid gray;
+        }
+    }
+    &__label {
+
+        &_style {
+            font-weight: bold;
+            font-size: 14px;
+            color:white;
+        }
+    }
+    &__input-text {
+        padding: 10px 20px;
+        margin: 15px 0 15px 0;
+        box-sizing: border-box;
+        transition: 0.1s;
+        &_style {
+            line-height: 15px;
+            font-size: 1rem;
+            color:gray;
+        }
+        &_outline {
+          outline-color: black;
+        }
+        &_size {
+            width: 100%;
+        }
+        &_border {
+
+            border:none;
+            border-radius: 5px;
+        }
+        &_shadow {
+            box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.28);
+        }
+        &_shadow:focus {
+            box-shadow: none;
+            transform: translateY(3px);
+        }
+   }
+    &__input-password {
+        &_style {
+            font-size:1rem;
+            color:black;
+        }
+    }
+    &__button {
+        transition: 0.1s;
+        &_shadow {
+            box-shadow: 3px 3px 3px gray;
+        }
+        &_border {
+            border: 1px solid gray !important;
+            border-radius: 10px !important;
+        }
+        &_theme {
+            background-color: #4b4848;
+        }
+        &:hover {
+            background-color: #312d2d !important;
+        }
+        &:active {
+            transform: translateY(3px);
+            box-shadow: none;
+        }
+    }
+    &__forget {
+       display: inline-block;
+    }
+    &__row {
+        display: block;
+        &_style {
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+        }
+        &_mt {
+            margin-top: 5px;
+        }
+    }
+    &__link {
+        &_style {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        &_border {
+            border-bottom: 2px solid gray;
+        }
+    }
+}
+.row-entryform {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+        &_pb {
+        padding-bottom: 3px;
+    }
+}
+@keyframes animatezoom_m {
+    from {transform: scale(0) translate(-50%, -50%)}
+    to {transform: scale(1) translate(-50%, -50%)}
+}
+@keyframes animatezoom_l {
+    from {transform: scale(1) translate(-50%, -50%)}
+    to {transform: scale(0) translate(-50%, -50%)}
+}
+@keyframes scale {
+    from {
+        transform: scale(1);
+        box-shadow: 5px 5px 10px lightslategray,
+        -5px -5px 10px lightslategray;
+        outline: 3px solid burlywood;
+        outline-offset: 3px;
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 20px  lightslategray,
+        -10px -10px 20px lightslategray;
+        outline: 3px solid burlywood;
+        outline-offset: 23px;
+        opacity: 0.3;
+    }
+}
+

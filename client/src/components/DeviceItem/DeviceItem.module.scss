@@ -1,0 +1,64 @@
+.row__device-card {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.device-card {
+    padding: 1rem;
+    cursor: pointer;
+    &_border {
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+    &_shadow {
+      box-shadow: 2px 2px 15px  black;
+    }
+    &_theme {
+      background-color: #525151;
+    }
+    &_fake {
+      visibility: hidden;
+    }
+    &:hover {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+  &__img-device-contaner {
+    text-align: center;
+  }
+  &__device-img {
+    width: 200px;
+    height: 250px;
+  }
+  &__description-contaner {
+
+  }
+  &__brand {
+
+  }
+  &__rating-contaner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__rating-value {
+    font-weight: bold;
+    font-style: italic;
+  }
+  &__star-contaner {
+
+  }
+  &__star {
+   width: 18px;
+   height: 18px;
+  }
+  &__name-device {
+
+  }
+}
+@media (max-width: 702px) {
+  .device-card{
+    &_fake {
+      display: none;
+    }
+  }
+}

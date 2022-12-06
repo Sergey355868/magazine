@@ -1,0 +1,22 @@
+.overlay {
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  &_theme {
+    background-color: #4b4848;
+  }
+  &_animate {
+    animation: animatezoom_ovm 0.6s;
+  }
+}
+@keyframes animatezoom_ovm {
+  from {transform: scale(0) }
+  to {transform: scale(1)  }
+}
+@keyframes animatezoom_ovl {
+  from {transform: scale(1) }
+  to {transform: scale(0)  }
+}

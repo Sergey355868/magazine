@@ -1,0 +1,241 @@
+.createDevice {
+  padding: 2rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index:999;
+  &_border {
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+  &_shadow {
+    box-shadow: 2px 2px 10px gray;
+  }
+  &_theme {
+    background-color: #989494;
+  }
+  &_size {
+    width: 800px;
+  }
+  &_animate  {
+    animation: zoom 0.6s ;
+  }
+  //-------------------------
+  &__title {
+    &_style {
+      color: white;
+      text-decoration: underline;
+    }
+    &_shadow {
+      text-shadow: 2px 2px 10px white;
+    }
+  }
+  //-------------------------------
+  &__body {
+    position: relative;
+  }
+  //-------------------------------
+  &__block-drop {
+    display: flex;
+  }
+  &__type-text {
+    font-weight: bold;
+  }
+  &__drop-type {
+    position: relative;
+    margin-right: 20px;
+  }
+  &__brand-text {
+    font-weight: bold;
+  }
+  &__drop-brand {
+    position: relative;
+  }
+  //-----------------------------
+  &__description {
+     display: flex;
+     margin-top: 20px;
+     padding-bottom: 10px;
+    &_border {
+      border-bottom: 2px solid white;
+    }
+  }
+  &__description-price {
+    margin-right: 20px;
+  }
+  &__description-name {
+    margin-right: 20px;
+  }
+  &__description-photo {
+
+  }
+  &__description-text {
+    font-weight: bold;
+
+  }
+  &__input {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    display: block;
+    margin-top: 10px;
+    &_size {
+      width: 250px;
+    }
+    &_style {
+      font-weight: bold;
+      font-size: 1rem;
+      color: gray;
+    }
+    &::placeholder {
+      color:black;
+      font-weight: normal;
+    }
+    &_border {
+      border: 2px solid gray;
+    }
+    &:focus {
+      outline: 2px solid gray;
+    }
+  }
+  //-----------------------------------
+  &__info {
+
+  }
+  &__add {
+    padding-top: 10px;
+  }
+  &__add-button {
+    padding: 0.7rem;
+    &_theme {
+      background-color:green;
+    }
+    &:hover {
+      background-color: #0a590a;
+    }
+  }
+  &__properties {
+
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    &_border {
+      border-bottom: 2px solid white;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  &__col {
+    //margin-right: 20px;
+  }
+  &__textarea {
+    padding: 0.9rem 1rem 1rem 0.5rem;
+    display: block;
+    resize: vertical;
+    margin-top: 10px;
+    overflow: hidden;
+    &_size {
+      width: 250px;
+    }
+    &_style {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &_border {
+      border: 2px solid gray;
+      border-radius: 4px;
+      outline-color: lightgray;
+    }
+    &::placeholder {
+      color:gray;
+      font-weight: normal;
+    }
+  }
+  &__delete {
+    padding: 0.6rem;
+    margin-top: 10px;
+    &_theme {
+      background-color: darkred;
+    }
+    &:hover {
+      background-color: #b45656;
+    }
+  }
+  //-----------------------------------
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    &_size {
+      width: 100%;
+    }
+    &_border {
+      border-top: 2px solid white;
+    }
+  }
+  &__add-serv {
+
+    display: flex;
+    justify-content: space-between;
+    &_size {
+      width: 130px;
+    }
+    &_theme {
+      background-color: green;
+    }
+    &:hover {
+      background-color: #0a590a;
+    }
+  }
+  &__close {
+
+    &_theme {
+      background-color: #b45656;
+    }
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+.spiner {
+  display: inline-block;
+  &_theme {
+    background-color: #4b4848;
+  }
+  &_size {
+    width: 10px;
+    height: 20px;
+  }
+  &_border {
+    border-radius: 50%;
+    border: 2px solid yellow;
+  }
+  &_shadow {
+    box-shadow: 2px 2px 10px yellow,-2px -2px 10px yellow;
+  }
+  &_animate {
+    animation: spiner 1s infinite;
+  }
+}
+@keyframes spiner {
+  from {
+    transform: rotate(0);
+    opacity: (1);
+  }
+  to {
+    opacity: 0.5;
+    transform: rotate(360deg);
+  }
+}
